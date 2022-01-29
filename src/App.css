@@ -1,6 +1,15 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:  100%;
+  
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -15,9 +24,8 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -26,6 +34,8 @@
 
 .App-link {
   color: #61dafb;
+  align-self: center;
+  padding: 1em;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +45,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+.viz {
+  width:  100%;  
+}
+
+#bubbles-svg {
+  max-width: 600px;
+}
+
+
+
+#mailchimp-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

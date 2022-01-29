@@ -3,10 +3,31 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
+import Beeswarm from "./Beeswarm";
+import CirclePack from "./CirclePack";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} >
+          <Route
+          index
+          element={<Beeswarm />}
+          />
+          <Route path="swarm" element={<Beeswarm />} />
+          <Route path="pack" element={<CirclePack />} />
+          <Route path="*" element={<Beeswarm />} />
+
+        </Route>
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
