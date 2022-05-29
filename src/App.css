@@ -9,6 +9,16 @@
   
 }
 
+#root{
+  text-align: center;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:  100%;
+}
+
 
 
 .App-logo {
@@ -23,19 +33,50 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #212121;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width:  100%; 
+}
+
+.App-header .App-link{
+  padding: 1em;
+  padding-left: 3em;
+  font-size: larger;
+
+}
+
+
+.maps-links-div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /*font-size: calc(10px + 2vmin);*/
+  width:  100%; 
+
+}
+
+.header-link-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.7em;
+
 }
 
 .App-link {
   color: #61dafb;
   align-self: center;
-  padding: 1em;
+  /*padding: 0.7em;*/
+  text-decoration: none;
+  
+  font-weight: bold;
 }
 
 @keyframes App-logo-spin {
@@ -54,7 +95,12 @@
   width:  100%;  
 }
 
-#bubbles-svg {
+#pack-svg,  #swarm-svg{
+  max-width: 800px;
+}
+
+#swarm-div{
+  width: 100%;
   max-width: 600px;
 }
 

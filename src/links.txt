@@ -1,0 +1,14 @@
+earnings-dates:   https://api.nasdaq.com/api/calendar/earnings?date=2022-05-25
+
+
+!!!!
+earnings-dates:   https://www.zacks.com/includes/classes/z2_class_calendarfunctions_data.php?calltype=eventscal&date=1650344400&type=1&search_trigger=0&0.19912683672436926&_=1653499880499
+
+
+!!!!
+ https://api.benzinga.com/api/v2.1/calendar/earnings?token=1c2735820e984715bc4081264135cb90&parameters[date_from]=2022-05-11&parameters[date_to]=2022-05-11&parameters[tickers]=&pagesize=1000
+
+ https://hosted-calendar.zacks.com/zackscal/retrieve_eventsdata/1/1653454800/street?ie_fix=1653515903215
+
+
+ x = requests.post("https://scanner.tradingview.com/america/scan", data='{"filter":[{"left":"market_cap_basic","operation":"nempty"},{"left":"is_primary","operation":"equal","right":true},{"left":"earnings_release_date,earnings_release_next_date","operation":"in_range","right":[1653364800,1653451140]},{"left":"earnings_release_date,earnings_release_next_date","operation":"nequal","right":1653451140}],"options":{"lang":"en"},"markets":["america"],"symbols":{"query":{"types":[]},"tickers":[]},"columns":["logoid","name","market_cap_basic","earnings_per_share_forecast_next_fq","earnings_per_share_fq","eps_surprise_fq","eps_surprise_percent_fq","revenue_forecast_next_fq","revenue_fq","earnings_release_next_date","earnings_release_next_calendar_date","earnings_release_next_time","description","type","subtype","update_mode","earnings_per_share_forecast_fq","revenue_forecast_fq","earnings_release_date","earnings_release_calendar_date","earnings_release_time","currency","fundamental_currency_code"],"sort":{"sortBy":"market_cap_basic","sortOrder":"desc"},"range":[0,150]}')
